@@ -1,0 +1,409 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  src: local('Bebas Neue Thin'), url('/font/bebasneuethin.ttf') format('ttf');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: local('Bebas Neue Regular'), url('/font/bebasneueregular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: local('BebasNeueBold'), url('/font/bebasneuebold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #9789f9;
+  width: 100%;
+  margin-top: 160px;
+}
+
+.wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.container_flex {
+  display: flex;
+  justify-content: space-between;
+
+
+  [class^="icon-"] {
+    margin-top: 4rem;
+    display: inline-block;
+    font-size: 6rem;
+    padding: 2px;
+  }
+
+
+  .block {
+    background-color: #f5f4f9;
+    position: relative;
+    transition: all 0.2s;
+
+    .box {
+      clip-path: circle(88% at 50% 100%);
+      background-color: white;
+      height: 611px;
+      width: 327px;
+      position: relative;
+    }
+
+    .box_1 {
+      text-align: center;
+      height: 611px;
+      width: 327px;
+      position: absolute;
+      top: 0;
+
+
+      .price_1 {
+        padding-top: 40px;
+        font-family: Bebas Neue, sans-serif;
+        font-weight: 100;
+        font-size: 6rem;
+        position: relative;
+
+        .sup {
+          vertical-align: super;
+          font-size: 2.4rem;
+          padding-right: 3px;
+        }
+
+        .sub {
+          vertical-align: sub;
+          font-size: 1.6rem;
+          position: absolute;
+          padding-left: 3px;
+          bottom: 10%;
+        }
+      }
+
+      .title {
+        padding-top: 25px;
+        font-family: Bebas Neue, sans-serif;
+        font-weight: 400;
+        font-size: 2.4rem;
+        text-transform: uppercase;
+      }
+
+      span {
+        font-size: 3rem;
+      }
+
+      .description {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 1.6rem;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+
+        li {
+          list-style-type: none;
+          padding-bottom: 34px;
+          text-align: left;
+        }
+      }
+
+      .grey {
+        background-color: #f5f4f9;
+        height: 60px;
+        width: 327px;
+        position: absolute;
+        bottom: 0;
+
+        .btn {
+          letter-spacing: .2rem;
+          margin-top: 30px;
+          font-family: Bebas Neue, sans-serif;
+          font-weight: 700;
+          color: white;
+          font-size: 1.8rem;
+          text-transform: uppercase;
+          text-decoration: none;
+          background-color: #6fcffb;
+          padding: 14px 47px;
+          display: inline-block;
+          border-radius: 25px;
+        }
+
+      }
+    }
+
+    &:hover {
+      z-index: 20;
+      transform: scale(1.1);
+    }
+  }
+
+
+  .block_2 {
+    background-color: #f5f4f9;
+    position: relative;
+    transition: all 0.2s;
+
+    .bubble {
+      padding: 10px 10px 0 0;
+      position: absolute;
+      right: 0;
+    }
+
+    .tooltip {
+      padding-top: 30px;
+      position: absolute;
+      right: -80px;
+      z-index: 10;
+
+      .txt {
+        text-transform: uppercase;
+        color: white;
+        top: 74%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        position: absolute;
+        font-family: Bebas Neue, sans-serif;
+        font-weight: 400;
+        font-size: 1.6rem;
+      }
+    }
+
+
+    .box {
+      clip-path: circle(88% at 50% 100%);
+      background-color: white;
+      height: 611px;
+      width: 327px;
+      position: relative;
+    }
+
+    .box_2 {
+      text-align: center;
+      height: 611px;
+      width: 327px;
+      position: absolute;
+      top: 0;
+
+      .price_2 {
+        padding-top: 40px;
+        font-family: Bebas Neue, sans-serif;
+        font-weight: 100;
+        font-size: 6rem;
+        position: relative;
+
+        .sup {
+          vertical-align: super;
+          font-size: 2.4rem;
+          padding-right: 3px;
+        }
+
+        .sub {
+          vertical-align: sub;
+          font-size: 1.6rem;
+          position: absolute;
+          padding-left: 3px;
+          bottom: 10%;
+        }
+
+      }
+
+      .title_2 {
+        padding-top: 25px;
+        font-family: Bebas Neue, sans-serif;
+        font-weight: 400;
+        font-size: 2.4rem;
+        text-transform: uppercase;
+      }
+
+      span {
+        font-size: 3rem;
+      }
+
+      .description_2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 1.6rem;
+        position: absolute;
+        top: 65%;
+        left: 48%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        li {
+          list-style-type: none;
+          padding-bottom: 34px;
+          text-align: left;
+        }
+      }
+
+      .grey_2 {
+        background-color: #f5f4f9;
+        height: 80px;
+        width: 327px;
+        position: absolute;
+        bottom: 0;
+
+        .btn {
+          letter-spacing: .2rem;
+          margin-top: -20px;
+          font-family: Bebas Neue, sans-serif;
+          font-weight: 700;
+          color: white;
+          font-size: 1.8rem;
+          text-transform: uppercase;
+          text-decoration: none;
+          background-color: #fd8d7b;
+          padding: 14px 47px;
+          display: inline-block;
+          border-radius: 25px;
+        }
+
+        p {
+          padding-top: 14px;
+          color: #a9a9a9;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 300;
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    &:hover {
+      z-index: 20;
+      transform: scale(1.1);
+
+    }
+  }
+
+  .block_3 {
+    background-color: #f5f4f9;
+    position: relative;
+    transition: all 0.2s;
+
+    .box {
+      clip-path: circle(88% at 50% 100%);
+      background-color: white;
+      height: 611px;
+      width: 327px;
+      position: relative;
+    }
+
+    .box_3 {
+      text-align: center;
+      height: 611px;
+      width: 327px;
+      position: absolute;
+      top: 0;
+
+      .price_3 {
+        padding-top: 40px;
+        font-family: Bebas Neue, sans-serif;
+        font-weight: 100;
+        font-size: 6rem;
+        position: relative;
+
+        .sup {
+          vertical-align: super;
+          font-size: 2.4rem;
+          padding-right: 3px;
+        }
+
+        .sub {
+          vertical-align: sub;
+          font-size: 1.6rem;
+          position: absolute;
+          padding-left: 3px;
+          bottom: 10%;
+        }
+      }
+
+      .title_3 {
+        padding-top: 25px;
+        font-family: Bebas Neue, sans-serif;
+        font-weight: 400;
+        font-size: 2.4rem;
+        text-transform: uppercase;
+      }
+
+      span {
+        font-size: 3rem;
+      }
+
+      .description_3 {
+
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 1.6rem;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        li {
+          list-style-type: none;
+          padding-bottom: 34px;
+          text-align: left;
+        }
+      }
+
+      .grey_3 {
+        background-color: #f5f4f9;
+        height: 60px;
+        width: 327px;
+        position: absolute;
+        bottom: 0;
+
+        .btn {
+          letter-spacing: .2rem;
+          margin-top: 30px;
+          font-family: Bebas Neue, sans-serif;
+          font-weight: 700;
+          color: white;
+          font-size: 1.8rem;
+          text-transform: uppercase;
+          text-decoration: none;
+          background-color: #6fcffb;
+          padding: 14px 47px;
+          display: inline-block;
+          border-radius: 25px;
+        }
+
+      }
+    }
+
+    &:hover {
+      z-index: 20;
+      transform: scale(1.1);
+    }
+  }
+
+  &:hover :not(:hover) {
+    transform: scale(0.95);
+  }
+
+}
